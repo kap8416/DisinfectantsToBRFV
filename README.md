@@ -8,8 +8,7 @@ The aim of this study is to evaluate the effectiveness of chemical disinfectants
 
 ### Experimental Workflow
 
-![Experimental Workflow]<img width="6000" height="4200" alt="Figure 2-9" src="https://github.com/user-attachments/assets/54a98269-2238-4e82-b514-f839e85e99ec" />
-()
+![Experimental Workflow] (<img width="6000" height="4200" alt="Figure 2-9" src="https://github.com/user-attachments/assets/54a98269-2238-4e82-b514-f839e85e99ec" />)
 
 *Figure: Diagram outlining the experimental workflow used to quantify lesion severity and count from leaf images, perform statistical modeling, and validate treatments using tomato bioassays.*
 
