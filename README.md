@@ -2,6 +2,19 @@
 
 This repository contains all scripts and data for analyzing the efficacy of various disinfectants against Tomato brown rugose fruit virus (ToBRFV). The analysis includes lesion-count assays, IRR modeling, and nonlinear Emax dose–response fitting.
 
+## 🧪 Study Overview
+
+The aim of this study is to evaluate the effectiveness of chemical disinfectants in reducing ToBRFV transmission using digital image analysis and statistical modeling. The pipeline integrates image processing, lesion quantification, descriptive statistics, and inferential modeling to identify optimal surface disinfection protocols.
+
+### Experimental Workflow
+
+![Experimental Workflow](Figure%202-9.png)
+
+*Figure: Diagram outlining the experimental workflow used to quantify lesion severity and count from leaf images, perform statistical modeling, and validate treatments using tomato bioassays.*
+
+## 📁 Contents
+This repository contains all scripts and data for analyzing the efficacy of various disinfectants against Tomato brown rugose fruit virus (ToBRFV). The analysis includes lesion-count assays, IRR modeling, and nonlinear Emax dose–response fitting.
+
 ## 📁 Contents
 
 - `DatosAgronomy.xlsx` — Raw data collected from greenhouse assays.
