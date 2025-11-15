@@ -45,14 +45,14 @@ Copiar código
 python emax_analysis.py --input DatosAgronomy.xlsx
 This performs data extraction and fits nonlinear dose–response curves (Emax model), generating PNG outputs.
 
-📊 Outputs
+##📊 **Outputs**
 emax_surface_method.png — Figure 9A–D. Surface × Method comparison.
 
 emax_by_product_grid.png — Emax fits per product across all surfaces/methods.
 
 forest_IRR_plastic_spray.png — IRR estimates with 95% CI.
 
-📌 Notes
+##📌 **Notes**
 Surface types include: plastic, pruning shears, and hands.
 
 Application methods include: spray and dip.
