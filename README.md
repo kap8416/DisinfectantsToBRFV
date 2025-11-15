@@ -35,24 +35,22 @@ Ensure Python 3.8+ is installed. Then install required packages:
 pip install pandas numpy matplotlib seaborn scipy openpyxl
 2. Run IRR GLM Analysis
 bash
-Copiar código
 python ToBRFV_analysis.py
 This script computes Incidence Rate Ratios (IRRs) using negative binomial GLM models and outputs a forest plot.
 
 3. Run Emax Analysis
 bash
-Copiar código
 python emax_analysis.py --input DatosAgronomy.xlsx
 This performs data extraction and fits nonlinear dose–response curves (Emax model), generating PNG outputs.
 
-## 📊 **Outputs**
-emax_surface_method.png — Figure 9A–D. Surface × Method comparison.
+📊 Outputs
+emax_surface_method.png — Surface × Method comparison.
 
 emax_by_product_grid.png — Emax fits per product across all surfaces/methods.
 
 forest_IRR_plastic_spray.png — IRR estimates with 95% CI.
 
-## 📌 **Notes**
+📌 Notes
 Surface types include: plastic, pruning shears, and hands.
 
 Application methods include: spray and dip.
