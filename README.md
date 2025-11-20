@@ -12,10 +12,17 @@ The aim of this study is to evaluate the effectiveness of chemical disinfectants
 
 *Figure: Diagram outlining the experimental workflow used to quantify lesion severity and count from leaf images, perform statistical modeling, and validate treatments using tomato bioassays.*
 
+## Descriptive Evaluation Prior to Model Fitting
+A descriptive statistical analysis was first performed to identify patterns of virucidal performance across disinfectants, doses, surfaces, and application methods. For each treatment, lesion count and leaf damage severity were summarized using means, standard deviations, and 95% confidence intervals. These descriptive metrics enabled the identification of the most and least effective dose–method combinations prior to model-based inference. All calculations and visualizations were conducted in Python and R, using the pandas, numpy, and ggplot2 libraries. This descriptive evaluation provided the empirical foundation for subsequent inferential modeling.
+
+## Statistical Modeling of Surface–Method Interactions
+
+Lesion count data were statistically evaluated to determine the effects of disinfectant formulation, surface type, and application method. Data exploration revealed overdispersion, leading to the use of a Negative Binomial Generalized Linear Model (NB-GLM) as the primary analytical framework. Model selection was based on residual diagnostics and Akaike Information Criterion, with the NB-GLM outperforming Poisson and Quasi-Poisson alternatives. The model included disinfectant, surface, and method as fixed effects, along with their pairwise interactions. Incidence Rate Ratios (IRRs) were calculated relative to the plastic–spray reference group to estimate the relative infection risk. Confidence intervals (95%) and Wald tests (p < 0.05) were used to assess significance. For disinfectants showing a monotonic response to concentration, a nonlinear Emax model was applied to characterize dose-dependent efficacy. Parameter estimation was performed using weighted least squares and Levenberg–Marquardt optimization, with model performance evaluated through residual analysis and AIC.
+
 ## 📁 Contents
 This repository contains all scripts and data for analyzing the efficacy of various disinfectants against Tomato brown rugose fruit virus (ToBRFV). The analysis includes lesion-count assays, IRR modeling, and nonlinear Emax dose–response fitting.
 
-## 📁 Contents
+## 📁 
 
 - `DatosAgronomy.xlsx` — Raw data collected from greenhouse assays.
 - `ToBRFV_analysis.py` — Generalized linear modeling (GLM) script to compute IRRs.
